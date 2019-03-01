@@ -1,6 +1,6 @@
 FROM eclipse/che-theia-endpoint-runtime:nightly
 
-ARG GO_VERSION=1.11.5
+ARG GO_VERSION=1.10.7
 
 RUN set -eux; \
 	apk add --no-cache --virtual .build-deps \
