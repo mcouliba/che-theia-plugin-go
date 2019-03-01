@@ -35,6 +35,7 @@ RUN set -eux; \
 	; \
     export GOPATH="/go"; \
     mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"; \
+    mkdir -p "/.cache" && chmod -R 777 "/.cache"; \
     export PATH="$GOPATH/bin:/usr/local/go/bin:$PATH"; \
     go get -u -v github.com/ramya-rao-a/go-outline && \
     go get -u -v github.com/acroca/go-symbols &&  \ 
